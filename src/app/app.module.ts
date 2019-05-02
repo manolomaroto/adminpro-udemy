@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 // Modules
 import { PagesModule } from './pages/pages.module';
-
+import { FormsModule } from '@angular/forms';
 
 // Rutas
 import { APP_ROUTES } from './app.routes';
@@ -11,6 +11,9 @@ import { APP_ROUTES } from './app.routes';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
+
+// ng2 charts
+import { ChartsModule } from 'ng2-charts';
 
 
 
@@ -23,7 +26,9 @@ import { RegisterComponent } from './login/register.component';
   imports: [
     BrowserModule,
     APP_ROUTES,
-    PagesModule
+    PagesModule,
+    FormsModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
