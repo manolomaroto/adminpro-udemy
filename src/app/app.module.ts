@@ -8,6 +8,10 @@ import { FormsModule } from '@angular/forms';
 // Rutas
 import { APP_ROUTES } from './app.routes';
 
+// servicios
+import { ServiceModule } from './services/service.module';
+
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
@@ -28,7 +32,8 @@ import { ChartsModule } from 'ng2-charts';
     APP_ROUTES,
     PagesModule,
     FormsModule,
-    ChartsModule
+    ChartsModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
